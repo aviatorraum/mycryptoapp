@@ -2,7 +2,7 @@
 
 A simple react-native app includes
 
-- crypto market infomations
+- crypto market informations
 - details of crypto
 
 ## Setup
