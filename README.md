@@ -5,6 +5,10 @@ A simple react-native app includes
 - crypto market information
 - details of crypto
 
+<img src='https://i.imgur.com/sTBQjaB.png' alt='market' width='250'/> <img src='https://i.imgur.com/AG3aNnC.png' alt='detail' width='250'/>
+
+---
+
 ## Setup
 
 ### Step 1. Install packages
