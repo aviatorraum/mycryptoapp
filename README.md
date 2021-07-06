@@ -5,6 +5,10 @@ A simple react-native app includes
 - crypto market infomations and details of crypto from Goingecko
 - web3 connect to ropsten testnet
 
+<img src='https://i.imgur.com/mLHVQXC.png' alt='market' width='250'/> <img src='https://i.imgur.com/xSunM3O.png' alt='detail' width='250'/> <img src='https://i.imgur.com/XSYpP1n.png' alt='market' width='250'/>
+
+---
+
 ## Setup
 
 ### Step 1. Install packages
