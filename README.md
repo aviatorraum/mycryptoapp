@@ -25,3 +25,8 @@ cd ios && npx pod-install && .. && yarn ios
 
 - node >=15.14
 - cocoapods 1.10.0
+
+---
+### If yarn ios faild, use XCode instead or try to fix with following method.
+* [yarn ios faild but XCode work!](
+https://github.com/facebook/react-native/issues/31249#issuecomment-811715288)
