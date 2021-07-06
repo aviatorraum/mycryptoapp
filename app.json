@@ -1,4 +1,15 @@
 {
   "name": "MyCryptoApp",
-  "displayName": "MyCryptoApp"
+  "displayName": "MyCryptoApp",
+  "expo": {
+    "name": "MyCryptoApp",
+    "slug": "mycryptoapp",
+    "version": "1.0.1",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "packagerOpts": {
+      "config": "./rn-cli.config.js"
+    }
+  }
 }

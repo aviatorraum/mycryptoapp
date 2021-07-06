@@ -7,6 +7,7 @@ const colors = {
   default: GREY,
   primary: '#137a6d',
   secondary: '#F1B24A',
+  secondaryDark: '#D8A042',
   background: '#f7f7f9',
   grey: GREY,
   greyLight: GREY_LIGHT,

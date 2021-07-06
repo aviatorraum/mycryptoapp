@@ -32,10 +32,6 @@ const handleOnchange = setPayload => (name, value) => {
   setPayload(p => ({ ...p, [name]: value }));
 };
 
-// const handleOnRefresh = handleGetCoins => () => {
-//   handleGetCoins(DEFAULT_PAYLOAD);
-// };
-
 const handleNextPage = (handleGetMore, payload, page) => () => {
   handleGetMore({ ...payload, page });
 };
@@ -58,7 +54,6 @@ const HomeScreen = ({
   }, []);
 
   const onChange = handleOnchange(setPayload);
-  // const onRefesh = handleOnRefresh(handleGetCoins);
   const getNextPage = handleNextPage(handleGetMore, payload, page);
 
   const onPressOrderBtn = (value) => {

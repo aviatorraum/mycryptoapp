@@ -7,7 +7,8 @@ import { stack } from './stack';
 const rootNavigator = () => {
   Promise.all([
     Feather.getImageSource('globe', 25),
-  ]).then(([homeIcon]) => {
+    Feather.getImageSource('credit-card', 25),
+  ]).then(([homeIcon, walletIcon]) => {
     Navigation.setDefaultOptions({
       statusBar: {
         backgroundColor: colors.primary,
@@ -40,11 +41,11 @@ const rootNavigator = () => {
               options: {
                 bottomTabs: {
                   titleDisplayMode: 'alwaysShow',
-                  visible: false,
                 },
               },
               children: [
                 stack('Home', 'Home', homeIcon),
+                stack('Wallet', 'Wallet', walletIcon),
               ]
             },
           },

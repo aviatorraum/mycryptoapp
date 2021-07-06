@@ -27,6 +27,7 @@ ScrollViewBox.defaultProps = {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     backgroundColor: colors.white,
     paddingHorizontal: spacing.middle,
   },

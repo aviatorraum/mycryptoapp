@@ -7,4 +7,7 @@ const priceFormat = (number) =>
 const numberFormat = (number) =>
   new Intl.NumberFormat().format(number);
 
-export { priceFormat, numberFormat };
+const firstUppercaseFormat = (text) => 
+  text.charAt(0).toUpperCase() + text.slice(1);
+
+export { priceFormat, numberFormat, firstUppercaseFormat };

@@ -4,12 +4,11 @@ const InitManagerItem = ({
   isInitialed,
   handleInitial,
 }) => {
-
   if(!isInitialed) {
     handleInitial();
   }
   
-  return <Fragment />
+  return <Fragment />;
 };
 
 export default React.memo(InitManagerItem, (prevProps, nextProps) => {
