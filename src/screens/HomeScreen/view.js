@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { VirtualizedList, StyleSheet } from 'react-native';
+import { VirtualizedList, StyleSheet, RefreshControl } from 'react-native';
 import { useNavigation } from 'react-native-navigation-hooks'
 import ViewBox from '~/components/ViewBox';
 import CoinCard from './components/CoinCard';
@@ -58,7 +58,7 @@ const HomeScreen = ({
   }, []);
 
   const onChange = handleOnchange(setPayload);
-  const onRefesh = handleOnRefresh(handleGetCoins);
+  const onRefresh = handleOnRefresh(handleGetCoins);
   const getNextPage = handleNextPage(handleGetMore, payload, page);
 
   const onPressOrderBtn = (value) => {
@@ -87,8 +87,12 @@ const HomeScreen = ({
       getItemCount={items => (items && items.size) || 0}
       getItem={(items, index) => items.get(index)}
       ListEmptyComponent={<EmptyContent />}
-      refreshing={false}
-      onRefesh={onRefesh}
+      refreshControl={
+        <RefreshControl
+          refreshing={false}
+          onRefresh={onRefresh}
+        />
+      }
       onEndReached={getNextPage}
       onEndReachedThreshold={0.2}
     />
