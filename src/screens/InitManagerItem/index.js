@@ -2,7 +2,7 @@ import { connect } from 'react-redux';
 import { initialAppAction } from '~/actions/settingActions';
 import InitManagerItem from './view';
 
-const mapStateToProps = ({ auth, setting }) => ({
+const mapStateToProps = ({ setting }) => ({
   isInitialed: setting.get('isInitialed'),
 });
 

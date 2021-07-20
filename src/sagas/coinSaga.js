@@ -19,7 +19,6 @@ const errGetCoins = (message) => {
 export function* getCoinsSaga({ payload }) {
   try {
     const { result } = yield call(getMarketsCoinResult, payload);
-console.log(result)
     const newPayload = {
       list: result,
       page: payload.page
